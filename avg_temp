@@ -1,0 +1,18 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+        System.out.print("Hom many number of day's temperature");
+        int numdays = console.nextInt();
+        int sum =0;
+        for(int i =1; i<numdays; i++){
+            System.out.println("Day "+ i+"temperature is" );
+            int temp =console.nextInt();
+            sum+=temp;
+        }
+        double average = sum/numdays;
+        System.out.println();
+        System.out.println("average temperature is " + average);
+    }
+}
